@@ -1,12 +1,16 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
+import 'home_widget.dart';
+import 'user_presenter.dart';
+
+
+class UserList extends StatelessWidget{
+  final List<User>people;
+}
 
 @override
 Widget build(BuildContext context) {
   return Scaffold(
-    appBar: AppBar(
-      title: Text('Looking 4 Love'),
-      backgroundColor: Colors.black87,
-    ),
+
     body: Container(
       height: 250,
       width: 500,
@@ -21,4 +25,4 @@ Widget build(BuildContext context) {
     ),
 
   );
-}
+}*/

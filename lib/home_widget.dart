@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'storeusers.dart'
 
 
 class Home extends StatefulWidget {
@@ -11,7 +10,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
- List<User> = initializeusers = [];
+
 
 
  int _selectedIndex = 0;
@@ -28,8 +27,40 @@ class _HomeState extends State<Home> {
      appBar: AppBar(
        title: Text('Looking 4 Love'),
      ),
-     body: Center(
-       child: _widgetOptions.elementAt(_selectedIndex),
+     body: Column( children: <Widget>[
+     //Row1
+       Row(
+         children: [
+     Container(
+       height: 250,
+       width: 410,
+       child: Card(
+         shape: RoundedRectangleBorder(
+           borderRadius: BorderRadius.circular(10),
+         ),
+         child: Image.network('https://picsum.photos/410/250'),
+       ),
+     ),
+         ]
+       ),
+       //Row2
+       Row(
+           children: [
+             Container(
+               height: 250,
+               width: 410,
+               child: Card(
+                 shape: RoundedRectangleBorder(
+                   borderRadius: BorderRadius.circular(10),
+                 ),
+                 child: Image.network('https://lorempixel.com/410/250'),
+               ),
+             ),
+           ]
+       ),
+  //     Center(
+    //     child:  _widgetOptions.elementAt(_selectedIndex),),
+     ]
 
      ),
      bottomNavigationBar: BottomNavigationBar(
@@ -43,6 +74,7 @@ class _HomeState extends State<Home> {
        onTap: _onItemTapped,
      ),
 
+
    );
  }
 
@@ -54,23 +86,6 @@ class _HomeState extends State<Home> {
 }
 
 
-@override
-Widget build(BuildContext context) {
-  return Container(
-      height: 250,
-      width: 500,
-      child: Card(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Image.network('https://picsum.photos/200/300/?random'),
-
-      ),
-
-    );
-
-
-}
 
 
 
